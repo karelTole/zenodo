@@ -13,9 +13,11 @@ RUN apt-get update \
     && apt-get -qy install --fix-missing --no-install-recommends \
         apt-utils curl libcairo2-dev fonts-dejavu libfreetype6-dev \
     # Node.js
-    && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+    && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get -qy install --fix-missing --no-install-recommends \
         nodejs \
+    && npm install -g npm@4 \
+
     # Slim down image
     && apt-get clean autoclean \
     && apt-get autoremove -y \
