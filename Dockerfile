@@ -17,6 +17,10 @@ RUN apt-get update \
     && apt-get -qy install --fix-missing --no-install-recommends \
         nodejs \
     && npm install -g npm@4 \
+    
+    #Install nano for modifying 
+ 
+    && apt install nano
 
     # Slim down image
     && apt-get clean autoclean \
