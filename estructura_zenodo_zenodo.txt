@@ -1,0 +1,518 @@
+zenodo
+├── celery.py
+├── cli.py
+├── config.py
+├── factory.py
+├── __init__.py
+├── modules
+│   ├── auditor
+│   │   ├── api.py
+│   │   ├── cli.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   ├── oai.py
+│   │   ├── records.py
+│   │   ├── tasks.py
+│   │   └── utils.py
+│   ├── communities
+│   │   ├── api.py
+│   │   ├── config.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   └── views.py
+│   ├── deposit
+│   │   ├── api.py
+│   │   ├── bundles.py
+│   │   ├── config.py
+│   │   ├── errors.py
+│   │   ├── ext.py
+│   │   ├── fetchers.py
+│   │   ├── forms.py
+│   │   ├── indexer.py
+│   │   ├── __init__.py
+│   │   ├── jsonschemas
+│   │   │   ├── deposits
+│   │   │   │   └── records
+│   │   │   │       ├── legacyrecord.json
+│   │   │   │       ├── record_src-v1.0.0.json
+│   │   │   │       └── record-v1.0.0.json
+│   │   │   └── __init__.py
+│   │   ├── links.py
+│   │   ├── loaders
+│   │   │   ├── base.py
+│   │   │   └── __init__.py
+│   │   ├── mappings
+│   │   │   ├── deposits
+│   │   │   │   └── records
+│   │   │   │       └── record-v1.0.0.json
+│   │   │   └── __init__.py
+│   │   ├── minters.py
+│   │   ├── query.py
+│   │   ├── receivers.py
+│   │   ├── resolvers.py
+│   │   ├── static
+│   │   │   ├── js
+│   │   │   │   └── zenodo_deposit
+│   │   │   │       ├── config.js
+│   │   │   │       ├── controllers.js
+│   │   │   │       ├── directives.js
+│   │   │   │       ├── filters.js
+│   │   │   │       └── providers.js
+│   │   │   ├── json
+│   │   │   │   └── zenodo_deposit
+│   │   │   │       └── deposit_form.json
+│   │   │   └── templates
+│   │   │       └── zenodo_deposit
+│   │   │           ├── actions.html
+│   │   │           ├── alert.html
+│   │   │           ├── array.html
+│   │   │           ├── button.html
+│   │   │           ├── ckeditor.html
+│   │   │           ├── communities.html
+│   │   │           ├── datepicker.html
+│   │   │           ├── default.html
+│   │   │           ├── fieldset.html
+│   │   │           ├── form.html
+│   │   │           ├── grantselect.html
+│   │   │           ├── list.html
+│   │   │           ├── loading.html
+│   │   │           ├── neweversionmodal.html
+│   │   │           ├── openaire-subtype.html
+│   │   │           ├── prereserve_doi.html
+│   │   │           ├── radios.html
+│   │   │           ├── radios_inline.html
+│   │   │           ├── results.html
+│   │   │           ├── select.html
+│   │   │           ├── selectstatus.html
+│   │   │           ├── textarea.html
+│   │   │           ├── uiselect.html
+│   │   │           ├── upgradeversioningmodal.html
+│   │   │           └── upload.html
+│   │   ├── tasks.py
+│   │   ├── templates
+│   │   │   └── zenodo_deposit
+│   │   │       ├── delete.html
+│   │   │       ├── edit.html
+│   │   │       └── index.html
+│   │   ├── utils.py
+│   │   ├── views.py
+│   │   └── views_rest.py
+│   ├── exporter
+│   │   ├── api.py
+│   │   ├── config.py
+│   │   ├── errors.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   ├── streams.py
+│   │   ├── tasks.py
+│   │   ├── utils.py
+│   │   └── writers.py
+│   ├── fixtures
+│   │   ├── cli.py
+│   │   ├── communities.py
+│   │   ├── data
+│   │   │   ├── communities.json
+│   │   │   ├── community-logos
+│   │   │   │   └── ecfunded.jpg
+│   │   │   ├── funders.json
+│   │   │   ├── grants.json
+│   │   │   ├── licenses.json
+│   │   │   ├── licenses_map.json
+│   │   │   ├── records.json
+│   │   │   ├── sipmetadatatypes.json
+│   │   │   └── users.json
+│   │   ├── ext.py
+│   │   ├── files.py
+│   │   ├── __init__.py
+│   │   ├── licenses.py
+│   │   ├── oai.py
+│   │   ├── records.py
+│   │   ├── users.py
+│   │   └── utils.py
+│   ├── frontpage
+│   │   ├── api.py
+│   │   ├── config.py
+│   │   ├── decorators.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   ├── templates
+│   │   │   └── zenodo_frontpage
+│   │   │       ├── benefits.html
+│   │   │       ├── coming_soon.html
+│   │   │       └── index.html
+│   │   └── views.py
+│   ├── github
+│   │   ├── api.py
+│   │   ├── cli.py
+│   │   └── __init__.py
+│   ├── indexer
+│   │   ├── __init__.py
+│   │   └── utils.py
+│   ├── __init__.py
+│   ├── jsonschemas
+│   │   ├── cli.py
+│   │   ├── compilers.py
+│   │   ├── config.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   └── utils.py
+│   ├── openaire
+│   │   ├── config.py
+│   │   ├── errors.py
+│   │   ├── ext.py
+│   │   ├── helpers.py
+│   │   ├── __init__.py
+│   │   ├── proxies.py
+│   │   ├── schema.py
+│   │   ├── tasks.py
+│   │   └── views.py
+│   ├── records
+│   │   ├── admin.py
+│   │   ├── api.py
+│   │   ├── config.py
+│   │   ├── data
+│   │   │   ├── include
+│   │   │   │   └── v4.1
+│   │   │   │       ├── datacite-contributorType-v4.xsd
+│   │   │   │       ├── datacite-dateType-v4.1.xsd
+│   │   │   │       ├── datacite-descriptionType-v4.xsd
+│   │   │   │       ├── datacite-funderIdentifierType-v4.xsd
+│   │   │   │       ├── datacite-nameType-v4.1.xsd
+│   │   │   │       ├── datacite-relatedIdentifierType-v4.xsd
+│   │   │   │       ├── datacite-relationType-v4.1.xsd
+│   │   │   │       ├── datacite-resourceType-v4.1.xsd
+│   │   │   │       └── datacite-titleType-v4.xsd
+│   │   │   ├── metadata41.xsd
+│   │   │   ├── objecttypes.json
+│   │   │   ├── titletype.xsd
+│   │   │   └── xml.xsd
+│   │   ├── ext.py
+│   │   ├── fetchers.py
+│   │   ├── httpretty_mock.py
+│   │   ├── indexer.py
+│   │   ├── __init__.py
+│   │   ├── jsonschemas
+│   │   │   ├── __init__.py
+│   │   │   └── records
+│   │   │       ├── base-v1.0.0.json
+│   │   │       ├── file-v1.0.0.json
+│   │   │       ├── objecttype-v1.0.0.json
+│   │   │       ├── record_src-v1.0.0.json
+│   │   │       └── record-v1.0.0.json
+│   │   ├── mappings
+│   │   │   ├── __init__.py
+│   │   │   └── records
+│   │   │       └── record-v1.0.0.json
+│   │   ├── minters.py
+│   │   ├── models.py
+│   │   ├── permissions.py
+│   │   ├── query.py
+│   │   ├── resolvers.py
+│   │   ├── serializers
+│   │   │   ├── bibtex.py
+│   │   │   ├── datacite.py
+│   │   │   ├── dc.py
+│   │   │   ├── fields
+│   │   │   │   ├── datetime.py
+│   │   │   │   ├── doi.py
+│   │   │   │   ├── html.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── persistentid.py
+│   │   │   │   ├── sanitizedunicode.py
+│   │   │   │   ├── sanitizedurl.py
+│   │   │   │   └── trimmedstring.py
+│   │   │   ├── files.py
+│   │   │   ├── __init__.py
+│   │   │   ├── json.py
+│   │   │   ├── legacyjson.py
+│   │   │   ├── marc21.py
+│   │   │   ├── pidrelations.py
+│   │   │   ├── schemaorg.py
+│   │   │   ├── schemas
+│   │   │   │   ├── common.py
+│   │   │   │   ├── csl.py
+│   │   │   │   ├── datacite.py
+│   │   │   │   ├── dc.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── json.py
+│   │   │   │   ├── legacyjson.py
+│   │   │   │   ├── marc21.py
+│   │   │   │   ├── pidrelations.py
+│   │   │   │   └── schemaorg.py
+│   │   │   └── to_marc21
+│   │   │       ├── __init__.py
+│   │   │       ├── model.py
+│   │   │       └── rules.py
+│   │   ├── static
+│   │   │   ├── templates
+│   │   │   │   ├── citations
+│   │   │   │   │   ├── count.html
+│   │   │   │   │   ├── facets.html
+│   │   │   │   │   ├── pagination.html
+│   │   │   │   │   ├── results.html
+│   │   │   │   │   └── selectbox.html
+│   │   │   │   └── invenio_csl
+│   │   │   │       ├── citeproc.html
+│   │   │   │       └── item.html
+│   │   │   └── xsl
+│   │   │       └── oai2.xsl
+│   │   ├── tasks.py
+│   │   ├── templates
+│   │   │   └── zenodo_records
+│   │   │       ├── box
+│   │   │       │   ├── citations.html
+│   │   │       │   ├── curate.html
+│   │   │       │   ├── edit.html
+│   │   │       │   ├── export.html
+│   │   │       │   ├── files.html
+│   │   │       │   ├── info.html
+│   │   │       │   ├── preview.html
+│   │   │       │   ├── publishedin.html
+│   │   │       │   ├── record_stats.html
+│   │   │       │   ├── references.html
+│   │   │       │   ├── share.html
+│   │   │       │   └── versions.html
+│   │   │       ├── macros
+│   │   │       │   ├── accessright.html
+│   │   │       │   ├── altmetric.html
+│   │   │       │   ├── authors.html
+│   │   │       │   └── objecttype.html
+│   │   │       ├── meta.html
+│   │   │       ├── previewer_base_template.html
+│   │   │       ├── record_detail.html
+│   │   │       ├── record_export.html
+│   │   │       ├── records_export_unsupported.html
+│   │   │       ├── tombstone.html
+│   │   │       └── update_datacite.html
+│   │   ├── utils.py
+│   │   └── views.py
+│   ├── redirector
+│   │   ├── config.py
+│   │   ├── __init__.py
+│   │   └── views.py
+│   ├── rest
+│   │   ├── __init__.py
+│   │   └── views.py
+│   ├── search_ui
+│   │   ├── __init__.py
+│   │   ├── static
+│   │   │   └── templates
+│   │   │       └── zenodo_search_ui
+│   │   │           ├── error.html
+│   │   │           ├── facets.html
+│   │   │           ├── results_curate.html
+│   │   │           └── results.html
+│   │   ├── templates
+│   │   │   └── zenodo_search_ui
+│   │   │       └── search.html
+│   │   └── views.py
+│   ├── sipstore
+│   │   ├── __init__.py
+│   │   ├── jsonschemas
+│   │   │   ├── __init__.py
+│   │   │   └── sipstore
+│   │   │       ├── agent-githubclient-v1.0.0.json
+│   │   │       └── agent-webclient-v1.0.0.json
+│   │   ├── tasks.py
+│   │   └── utils.py
+│   ├── sitemap
+│   │   ├── config.py
+│   │   ├── ext.py
+│   │   ├── generators.py
+│   │   ├── __init__.py
+│   │   ├── tasks.py
+│   │   ├── templates
+│   │   │   └── zenodo_sitemap
+│   │   │       ├── sitemapindex.xml
+│   │   │       └── sitemap.xml
+│   │   └── views.py
+│   ├── spam
+│   │   ├── forms.py
+│   │   ├── __init__.py
+│   │   ├── templates
+│   │   │   └── zenodo_spam
+│   │   │       └── delete.html
+│   │   └── views.py
+│   ├── stats
+│   │   ├── cli.py
+│   │   ├── config.py
+│   │   ├── errors.py
+│   │   ├── event_builders.py
+│   │   ├── exporters.py
+│   │   ├── ext.py
+│   │   ├── __init__.py
+│   │   ├── proxies.py
+│   │   ├── registrations.py
+│   │   ├── tasks.py
+│   │   ├── templates
+│   │   │   ├── aggregations
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── v2
+│   │   │   │       ├── aggr-record-download-v1.0.0.json
+│   │   │   │       └── aggr-record-view-v1.0.0.json
+│   │   │   ├── events
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── v2
+│   │   │   │       ├── file-download-v1.0.0.json
+│   │   │   │       └── record-view-v1.0.0.json
+│   │   │   └── __init__.py
+│   │   └── utils.py
+│   ├── support
+│   │   ├── config.py
+│   │   ├── ext.py
+│   │   ├── forms.py
+│   │   ├── __init__.py
+│   │   ├── proxies.py
+│   │   ├── templates
+│   │   │   └── zenodo_support
+│   │   │       ├── contact_form.html
+│   │   │       ├── email_body.html
+│   │   │       ├── email_title.html
+│   │   │       └── macros.html
+│   │   ├── utils.py
+│   │   └── views.py
+│   ├── theme
+│   │   ├── bundles.py
+│   │   ├── collect.py
+│   │   ├── __init__.py
+│   │   ├── static
+│   │   │   ├── img
+│   │   │   │   ├── asterisk.png
+│   │   │   │   ├── briefideas.png
+│   │   │   │   ├── ca-logo.png
+│   │   │   │   ├── cc-zero.png
+│   │   │   │   ├── cern_badge_60.png
+│   │   │   │   ├── cern_badge_80.png
+│   │   │   │   ├── cern.png
+│   │   │   │   ├── e-infra.png
+│   │   │   │   ├── einfra_sm.png
+│   │   │   │   ├── einfrastructure_sm.png
+│   │   │   │   ├── eu-color.jpg
+│   │   │   │   ├── eu-color.png
+│   │   │   │   ├── eu.png
+│   │   │   │   ├── f1000research.jpg
+│   │   │   │   ├── f1000stacked.jpg
+│   │   │   │   ├── favicon.png
+│   │   │   │   ├── fp7-capacities_tr.png
+│   │   │   │   ├── fp7.png
+│   │   │   │   ├── fp7_sm.png
+│   │   │   │   ├── github.png
+│   │   │   │   ├── glyphicons-halflings.png
+│   │   │   │   ├── glyphicons-halflings-white.png
+│   │   │   │   ├── header.png
+│   │   │   │   ├── ieee.jpg
+│   │   │   │   ├── inspirehep.png
+│   │   │   │   ├── invenio.png
+│   │   │   │   ├── invenio.svg
+│   │   │   │   ├── LICENSE
+│   │   │   │   ├── logos
+│   │   │   │   │   ├── zenodo-black-1000.png
+│   │   │   │   │   ├── zenodo-black-200.png
+│   │   │   │   │   ├── zenodo-black-2500.jpg
+│   │   │   │   │   ├── zenodo-black-2500.png
+│   │   │   │   │   ├── zenodo-black-border.svg
+│   │   │   │   │   ├── zenodo-black.svg
+│   │   │   │   │   ├── zenodo-gradient-1000.jpg
+│   │   │   │   │   ├── zenodo-gradient-1000.png
+│   │   │   │   │   ├── zenodo-gradient-200.jpg
+│   │   │   │   │   ├── zenodo-gradient-200.png
+│   │   │   │   │   ├── zenodo-gradient-2500.jpg
+│   │   │   │   │   ├── zenodo-gradient-2500.png
+│   │   │   │   │   ├── zenodo-gradient-round.svg
+│   │   │   │   │   ├── zenodo-gradient-square.svg
+│   │   │   │   │   ├── zenodo-white-1000.png
+│   │   │   │   │   ├── zenodo-white-200.png
+│   │   │   │   │   ├── zenodo-white-2500.png
+│   │   │   │   │   ├── zenodo-white-border.svg
+│   │   │   │   │   └── zenodo-white.svg
+│   │   │   │   ├── oa-logo.png
+│   │   │   │   ├── openaire-bg.png
+│   │   │   │   ├── openaire-color.png
+│   │   │   │   ├── openaire-horizontal-old.png
+│   │   │   │   ├── openaire-horizontal.png
+│   │   │   │   ├── openaire_lg.png
+│   │   │   │   ├── openaire_logo.jpeg
+│   │   │   │   ├── openaire_logo_small.png
+│   │   │   │   ├── openaire_logo.xcf
+│   │   │   │   ├── openaire.png
+│   │   │   │   ├── orcid.png
+│   │   │   │   ├── orcid.svg
+│   │   │   │   ├── screenshots
+│   │   │   │   │   ├── github.png
+│   │   │   │   │   └── search.png
+│   │   │   │   ├── zenodo.png
+│   │   │   │   └── zenodo.svg
+│   │   │   ├── js
+│   │   │   │   ├── modernizr-custom.js
+│   │   │   │   ├── zenodo
+│   │   │   │   │   ├── filters
+│   │   │   │   │   │   ├── citations.js
+│   │   │   │   │   │   ├── module.js
+│   │   │   │   │   │   ├── safe.js
+│   │   │   │   │   │   ├── striptags.js
+│   │   │   │   │   │   ├── titlecase.js
+│   │   │   │   │   │   └── upperCase.js
+│   │   │   │   │   ├── functions.js
+│   │   │   │   │   └── module.js
+│   │   │   │   ├── zenodo-build.js
+│   │   │   │   ├── zenodo.js
+│   │   │   │   ├── zenodo.search.js
+│   │   │   │   └── zenodo-settings.js
+│   │   │   ├── ping
+│   │   │   └── scss
+│   │   │       ├── body.scss
+│   │   │       ├── communities.scss
+│   │   │       ├── cover.scss
+│   │   │       ├── deposit.scss
+│   │   │       ├── footer.scss
+│   │   │       ├── frontpage.scss
+│   │   │       ├── input-icon.scss
+│   │   │       ├── navbar.scss
+│   │   │       ├── pages.scss
+│   │   │       ├── record.scss
+│   │   │       ├── search.scss
+│   │   │       ├── sidebarnav.scss
+│   │   │       ├── styles.scss
+│   │   │       ├── type.scss
+│   │   │       ├── utilities.scss
+│   │   │       └── variables.scss
+│   │   ├── templates
+│   │   │   ├── zenodo_github
+│   │   │   │   └── settings
+│   │   │   │       ├── index.html
+│   │   │   │       └── view.html
+│   │   │   └── zenodo_theme
+│   │   │       ├── communities
+│   │   │       │   ├── about.html
+│   │   │       │   ├── base.html
+│   │   │       │   ├── curate.html
+│   │   │       │   ├── detail.html
+│   │   │       │   ├── portalbox_upload.html
+│   │   │       │   ├── search.html
+│   │   │       │   └── sidebar.html
+│   │   │       ├── css.html
+│   │   │       ├── footer.html
+│   │   │       ├── full_page.html
+│   │   │       ├── header.html
+│   │   │       ├── javascript.html
+│   │   │       ├── page_cover.html
+│   │   │       ├── page.html
+│   │   │       ├── security
+│   │   │       │   ├── login_user.html
+│   │   │       │   ├── oauth_register_user.html
+│   │   │       │   └── register_user.html
+│   │   │       ├── settings
+│   │   │       │   └── base.html
+│   │   │       └── trackingcode.html
+│   │   └── views.py
+│   └── utils
+│       ├── cli.py
+│       ├── files.py
+│       ├── grants.py
+│       ├── __init__.py
+│       ├── openaire.py
+│       └── tasks.py
+├── version.py
+└── wsgi.py
+
+95 directories, 420 files
