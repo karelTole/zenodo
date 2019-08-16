@@ -184,10 +184,10 @@ SUPPORT_ISSUE_CATEGORIES = [
 ]
 
 #: Email address of sender.
-SUPPORT_SENDER_EMAIL = 'info@zenodo.org'
+SUPPORT_SENDER_EMAIL = 'tole@ciencias.unam.mx'
 
 #: Name of the sender
-SUPPORT_SENDER_NAME = 'Zenodo'
+SUPPORT_SENDER_NAME = 'Soporte Datos Abiertos de Investigación UNAM'
 
 #: Email address for support.
-SUPPORT_SUPPORT_EMAIL = ['info@zenodo.org']
+SUPPORT_SUPPORT_EMAIL = ['tole@ciencias.unam.mx']
