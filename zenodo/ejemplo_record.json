@@ -1,0 +1,67 @@
+{
+    "doi": "10.5072/zenodo.4",
+    "_oai": {
+      "id": "oai:zenodo.org:4",
+      "sets": [
+        "user-fciencias"
+      ]
+    },
+    "recid": 4,
+    "title": "Mouse table",
+    "_files": [
+      {
+        "key": "experimenttable.csv",
+        "size": 1094,
+        "type": "csv",
+        "bucket": "7f505299-24c9-4469-b6eb-cd6c6c3587ef",
+        "file_id": "6b452ccd-3c3d-4e62-b841-556d0775f92e",
+        "checksum": "md5:e4f0cb04a5fdcf5473dd328ed7ae7318",
+        "version_id": "f65efcdf-a098-4ecb-a08e-40f4f98f6b70"
+      }
+    ],
+    "owners": [
+      2
+    ],
+    "$schema": "https://zenodo.org/schemas/records/record-v1.0.0.json",
+    "license": {
+      "$ref": "https://dx.zenodo.org/licenses/mit-license"
+    },
+    "version": "1",
+    "_buckets": {
+      "record": "7f505299-24c9-4469-b6eb-cd6c6c3587ef",
+      "deposit": "4c8c11c4-c712-439b-b2d7-f1c7ac7214a3"
+    },
+    "_deposit": {
+      "id": "4",
+      "pid": {
+        "type": "recid",
+        "value": "4",
+        "revision_id": 2
+      },
+      "owners": [
+        2
+      ],
+      "status": "published",
+      "created_by": 2
+    },
+    "creators": [
+      {
+        "name": "Autor Prueba 01"
+      }
+    ],
+    "keywords": [
+      "mouse, csv, Ted Laderas"
+    ],
+    "language": "eng",
+    "conceptdoi": "10.5072/zenodo.3",
+    "communities": [
+      "fciencias"
+    ],
+    "description": "<p>Dataset del curso de R de Ted Laderas</p>",
+    "access_right": "open",
+    "conceptrecid": "3",
+    "resource_type": {
+      "type": "dataset"
+    },
+    "publication_date": "2019-08-14"
+  }
