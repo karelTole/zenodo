@@ -76,12 +76,12 @@ def _(x):
 
 
 #: System sender email address
-ZENODO_SYSTEM_SENDER_EMAIL = 'system@zenodo.org'
+ZENODO_SYSTEM_SENDER_EMAIL = 'system@dgru.unam.mx'
 #: Email address of admins
-ZENODO_ADMIN_EMAIL = 'admin@zenodo.org'
+ZENODO_ADMIN_EMAIL = 'admin@dgru.unam.mx'
 
 #: Email address for support.
-SUPPORT_EMAIL = "info@zenodo.org"
+SUPPORT_EMAIL = "info@dgru.unam.mx"
 MAIL_SUPPRESS_SEND = True
 
 # Application
@@ -1149,7 +1149,7 @@ THEME_SITEURL = "http://localhost:5000"
 #: Endpoint for breadcrumb root.
 THEME_BREADCRUMB_ROOT_ENDPOINT = 'zenodo_frontpage.index'
 #: Twitter handle.
-THEME_TWITTERHANDLE = "@zenodo_org"
+THEME_TWITTERHANDLE = "@dgru.unam.mx"
 #: Path to logo file.
 THEME_LOGO = "img/zenodo.svg"
 #: Google Site Verification ids.
