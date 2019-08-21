@@ -1,7 +1,7 @@
 
 ============
 
-.. code-block:: console
+
 
 modules
 │   ├── auditor  
@@ -26,12 +26,10 @@ modules
 │   ├── theme
 │   ├── utils
 
-.. note::
+
 
 
 Carpeta auditor: 
-
-.. code-block:: console
 
 modules
 │   ├── auditor  
@@ -44,4 +42,4 @@ modules
 │   │   ├── tasks.py
 │   │   └── utils.py
 
-.. note::
+
