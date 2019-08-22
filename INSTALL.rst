@@ -1,60 +1,53 @@
-Installation
+Instalación
 ============
 
-Zenodo depends on PostgreSQL, Elasticsearch 2.x, Redis and RabbitMQ.
+Zenodo depende de PostgreSQL, Elasticsearch 2.x, Redis y RabbitMQ.
 
-If you are only interested in running Zenodo locally, follow the Docker
-installation guide below. If you plan to eventually develop Zenodo code you
-continue further to Development installation to find out how to set up the
-local instance for easy code development.
+Si solo está interesado en ejecutar Zenodo localmente, siga el Docker
+guía de instalación a continuación. Si planea desarrollar eventualmente el código de Zenodo,
+continúe con la instalación de desarrollo para descubrir cómo configurar el
+instancia local para facilitar el desarrollo del código.
 
-For this guide you will need to install
-`docker <https://docs.docker.com/engine/installation/>`_ along with the
-`docker-compose <https://docs.docker.com/compose/>`_ tool.
+Para esta guía necesitará instalar
+`docker <https://docs.docker.com/engine/installation/>` _ junto con el
+`docker-compose <https://docs.docker.com/compose/>` _ herramienta.
 
-Docker installation is not necessary, although highly recommended.
+La instalación de Docker no es necesaria, aunque muy recomendable.
 
-If you can't use docker you can run Zenodo and all of the required services
-directly in your system. Take a look at
-`docker-compose.yml <https://github.com/zenodo/zenodo/blob/master/docker-compose.yml/>`_
-file to find out what is required and how the configuration looks like.
-For development you will need to set-up and configure
-four services: PostgreSQL (``db``), Elasticsearch (``es``),
-Redis (``cache``) and RabbitMQ (``mq``).
+Si no puede usar Docker, puede ejecutar Zenodo y todos los servicios requeridos
+directamente en su sistema. Echa un vistazo a
+`docker-compose.yml <https://github.com/zenodo/zenodo/blob/master/docker-compose.yml/>` _
+archivo para averiguar qué se requiere y cómo se ve la configuración.
+Para el desarrollo necesitará configurar y configurar
+cuatro servicios: PostgreSQL (`` db``), Elasticsearch (`` es``),
+Redis (`` caché '') y RabbitMQ (`` mq '').
 
-Docker installation
+Instalación de Docker
 -------------------
-The easiest way to run Zenodo locally is to use the provided docker-compose
-configuration containing full Zenodo stack. First checkout the source code,
-build all docker images and boot them up using ``docker-compose``:
+La forma más fácil de ejecutar Zenodo localmente es usar el docker-compose proporcionado
+configuración que contiene la pila completa de Zenodo. Primero revisa el código fuente,
+construya todas las imágenes de la ventana acoplable e inícielas usando `` docker-compose '':
 
 .. code-block:: console
 
-    $ cd ~/src/
     $ git clone https://github.com/zenodo/zenodo.git
-    $ cd ~/src/zenodo
+    $ cd zenodo
     $ git checkout master
     $ docker-compose build
     $ docker-compose up
 
 
-.. note::
-
-    For the purpose of this guide we will assume that all repositories are
-    checked into ``~/src/`` directory.
-
-
-Keep the session with the docker-compose above alive, and in a new shell
-run the init script which creates the database tables, search indexes
-and some data fixtures:
+Mantenga viva la sesión con el docker-compose anterior y en un nuevo shell
+ejecuta el script de inicio que crea las tablas de la base de datos, busca índices
+y algunos accesorios de datos:
 
 .. code-block:: console
 
-    $ cd ~/src/zenodo
+    $ cd zenodo
     $ docker-compose run --rm web bash /code/zenodo/scripts/init.sh
     $ docker-compose run --rm web bash /code/zenodo/scripts/index.sh
 
-Now visit the following URL in your browser:
+Ahora visite la siguiente URL en su navegador:
 
 .. code-block:: console
 
@@ -62,22 +55,23 @@ Now visit the following URL in your browser:
 
 .. note::
 
-    If you're running docker on Linux or newer Mac OS X systems,
-    the ``<docker ip>`` is usually the localhost. For older Mac OS X and
-    Windows systems running docker through ``docker-machine``, you can find
-    the IP with
+    Si está ejecutando Docker en Linux o sistemas Mac OS X más nuevos,
+    el `` <docker ip> `` suele ser el host local. Para Mac OS X y versiones anteriores
+    Los sistemas Windows que ejecutan docker a través de `` docker-machine``, pueden encontrar
+    la IP con:
 
     .. code-block:: console
 
         $ docker-machine ip <machine-name>
 
-You can use the following web interface to inspect Elasticsearch and RabbitMQ:
+
+Puede usar la siguiente interfaz web para inspeccionar Elasticsearch y RabbitMQ:
 
 - Elasticsearch: http://<docker ip>:9200/_plugin/hq/
 - RabbitMQ: http://<docker ip>:15672/ (guest/guest)
 - HAProxy: http://<docker ip>:8080/ (guest/guest)
 
-Also the following ports are exposed on the Docker host:
+Además, los siguientes puertos están expuestos en el host Docker:
 
 - ``80``: HAProxy
 - ``81``: Nginx
@@ -93,33 +87,33 @@ Also the following ports are exposed on the Docker host:
 - ``15672``: RabbitMQ management console
 
 
-Development installation
+Instalación de desarrollo
 ------------------------
 
-For the development setup we will reuse the Zenodo docker image from
-previous section to run only essential Zenodo services, and run the
-application code and the Celery worker outside docker - you will want to
-have easy access to the code and the virtual environment in which it will be
-installed.
+Para la configuración de desarrollo, reutilizaremos la imagen del acoplador de Zenodo de
+sección anterior para ejecutar solo servicios esenciales de Zenodo y ejecutar el
+código de aplicación y el trabajador de apio fuera de la ventana acoplable: querrás
+tener fácil acceso al código y al entorno virtual en el que será
+instalado.
 
 .. note::
 
-    Since docker will be mapping the services to the default system
-    ports on localhost, make sure you are not running PostgreSQL,
-    Redis, RabbitMQ or Elasticsearch on those ports in your system.
+    Dado que Docker asignará los servicios al sistema predeterminado
+    puertos en localhost, asegúrese de que no está ejecutando PostgreSQL,
+    Redis, RabbitMQ o Elasticsearch en esos puertos en su sistema.
 
-Similarly to how we previously ran ``docker-compose up`` to run full-stack
-Zenodo, this time we run only four docker nodes with the database,
-Elasticsearch, Redis and RabbitMQ:
+De manera similar a cómo ejecutamos previamente `` docker-compose up '' para ejecutar full-stack
+Zenodo, esta vez solo ejecutamos cuatro nodos docker con la base de datos,
+Elasticsearch, Redis y RabbitMQ:
 
 .. code-block:: console
 
     $ docker-compose up db es cache mq
 
-Keep the docker-compose session above alive and in a separate shell, create a
-new Python virtual environment using virtualenvwrapper
-(`virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>`_),
-in which we will install Zenodo code and its dependencies:
+Mantenga la sesión docker-compose anterior viva y en un shell separado, cree un
+nuevo entorno virtual de Python usando virtualenvwrapper
+(`virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>` _),
+en el que instalaremos el código de Zenodo y sus dependencias:
 
 .. code-block:: console
 
@@ -128,26 +122,27 @@ in which we will install Zenodo code and its dependencies:
 
 .. note::
 
-    Zenodo works on both on Python 2.7 and 3.5+. However in case you need to
-    use the XRootD storage interface, you will need Python 2.7 as the
-    underlying libraries don't support Python 3.5+ yet.
+    Zenodo funciona tanto en Python 2.7 como en 3.5+. Sin embargo, en caso de que necesite
+    use la interfaz de almacenamiento XRootD, necesitará Python 2.7 como
+    Las bibliotecas subyacentes aún no son compatibles con Python 3.5+.
 
-Next, install Zenodo and code the dependencies:
+A continuación, instale Zenodo y codifique las dependencias:
 
 .. code-block:: console
 
-    (zenodo)$ cd ~/src/zenodo
+    (zenodo)$ cd zenodo
     (zenodo)$ pip install -r requirements.txt --src ~/src/ --pre --upgrade
     (zenodo)$ pip install -e .[all,postgresql,elasticsearch2]
 
 .. note::
 
-    ``--src ~/src/`` parameter will checkout the development versions of
-    certain Invenio extensions into ``~/src/``.
+    ``--src ~/src/`` El parámetro verificará las versiones de desarrollo de
+    ciertas extensiones de Invenio en ``~/src/``.
 
 .. note::
 
-    Z shell users: wrap the ``.[all,postgresql,elasticsearch2]`` part in quotes:
+    Usuarios del shell Z: envuelva la parte ``. [all, postgresql, elasticsearch2] `` entre comillas:
+
 
     .. code-block:: console
 
@@ -156,95 +151,96 @@ Next, install Zenodo and code the dependencies:
 Media assets
 ~~~~~~~~~~~~
 
-Next, we need to build the assets for the Zenodo application.
+Luego, necesitamos construir los activos para la aplicación Zenodo.
 
-To compile Zenodo assets we will need to install:
+Para compilar los activos de Zenodo necesitaremos instalar:
 
 * NodeJS **7.4** and NPM **4.0.5**
 
 * Asset-building dependencies: SASS **3.8.0**, CleanCSS **3.4.19**, UglifyJS **2.7.3** and RequireJS **2.2.0**
 
-If you system packages provide NodeJS and NPM in the versions listed above, you
-can install the asset tools system-wide (with ``sudo``), by executing:
+Si los paquetes del sistema proporcionan NodeJS y NPM en las versiones enumeradas anteriormente, usted
+puede instalar las herramientas de activos en todo el sistema (con `` sudo``), ejecutando:
 
 .. code-block:: console
 
    (zenodo)$ sudo ./scripts/setup-npm.sh
 
-Take a look in the script above to see which commands are being run.
-Use of ``sudo`` is required because of the ``-g`` flag for global installation.
+Eche un vistazo en el script anterior para ver qué comandos se están ejecutando.
+Se requiere el uso de `` sudo`` debido a la bandera `` -g`` para la instalación global.
 
-Alternatively, you can install NodeJS, NPM and other dependencies using
-NVM (node version manager), which is similar to Python's virtualenv.
+Alternativamente, puede instalar NodeJS, NPM y otras dependencias usando
+NVM (administrador de versión de nodo), que es similar al virtualenv de Python.
 
-To do that, you need to first install NVM from
-`https://github.com/creationix/nvm <https://github.com/creationix/nvm/>`_
-or from your OS-specific package repository:
+Para hacer eso, primero debe instalar NVM desde
+`https://github.com/creationix/nvm <https://github.com/creationix/nvm/>` _
+o desde el repositorio de paquetes específico de su sistema operativo:
 
 * NVM on `Arch Linux AUR <https://aur.archlinux.org/packages/nvm/>`_
 
 * Brew on OS X: ``brew install nvm``
 
-Note: If you install NVM from system packages, you still need to source it
-in your ``.bashrc`` or ``.zshrc``. Refer to NVM repository for more details.
+Nota: Si instala NVM desde los paquetes del sistema, aún necesita obtenerlo
+en su `` .bashrc`` o `` .zshrc``. Consulte el repositorio NVM para más detalles.
 
-Once NVM is installed, set it to use NodeJS in version 7.4:
+Una vez que NVM esté instalado, configúrelo para usar NodeJS en la versión 7.4:
 
 .. code-block:: console
 
    (zenodo)$ nvm use 7.4
    Now using node v7.4.0 (npm v4.0.5)
 
-As before, install the npm requirements, this time without ``sudo``:
+Como antes, instale los requisitos de npm, esta vez sin `` sudo '':
 
 .. code-block:: console
 
    (zenodo)$ ./scripts/setup-npm.sh
 
-the packages will be installed in your local user's NVM environment.
+los paquetes se instalarán en el entorno NVM de su usuario local.
 
-After you've installed the NPM packages system-wide or with NVM, you can
-finally download and build the media assets for Zenodo. There is a script
-which does that:
+Después de haber instalado los paquetes NPM en todo el sistema o con NVM, puede
+finalmente descargue y cree los recursos multimedia para Zenodo. Hay un guion
+que hace eso:
 
 .. code-block:: console
 
    (zenodo)$ ./scripts/setup-assets.sh
 
-Running services
+
+Servicios en uso
 ~~~~~~~~~~~~~~~~
 
-To run Zenodo locally, you will need to have some services running on your
-machine.
-At minimum you must have PostgreSQL, Elasticsearch 2.x, Redis and RabbitMQ.
-You can either install all of those from your system package manager and run
-them directly or better - use the provided docker image as before.
+Para ejecutar Zenodo localmente, necesitará tener algunos servicios ejecutándose en su máquina.
+Como mínimo, debe tener PostgreSQL, Elasticsearch 2.x, Redis y RabbitMQ.
+Puede instalarlos desde el administrador de paquetes del sistema y ejecutar
+directamente o mejor: use la imagen acoplada proporcionada como antes.
 
-**The docker image is the recommended method for development.**
+** La imagen Docker es el método recomendado para el desarrollo. **
 
-.. note::
+.. Nota::
 
-   If you run the services locally, make sure you're running
-   Elasticsearch **2.x**. Elasticsearch **5.x** is NOT yet supported.
+   Si ejecuta los servicios localmente, asegúrese de estar ejecutando
+   Elasticsearch ** 2.x **. Elasticsearch ** 5.x ** aún NO es compatible.
 
 
-To run only the essential services using docker, execute the following:
+Para ejecutar solo los servicios esenciales con Docker, ejecute lo siguiente:
 
-.. code-block:: console
+.. code-block :: consola
 
-    $ cd ~/src/zenodo
+    $ cd ~ / src / zenodo
     $ docker-compose up db es mq cache
 
-This should bring up four docker nodes with PostgreSQL (db), Elasticsearch (es),
-RabbitMQ (mq), and Redis (cache). Keep this shell session alive.
+Esto debería mostrar cuatro nodos Docker con PostgreSQL (db), Elasticsearch (es),
+RabbitMQ (mq) y Redis (caché). Mantenga viva esta sesión de shell.
 
-Initialization
+
+Inicialización
 ~~~~~~~~~~~~~~
-Now that the services are running, it's time to initialize the Zenodo database
-and the Elasticsearch index.
+Ahora que los servicios se están ejecutando, es hora de inicializar la base de datos de Zenodo
+y el índice Elasticsearch.
 
-Create the database, Elasticsearch indices, messages queues and various
-fixtures for licenses, grants, communities and users in a new shell session:
+Cree la base de datos, índices Elasticsearch, colas de mensajes y varios
+accesorios para licencias, subvenciones, comunidades y usuarios en una nueva sesión de shell:
 
 .. code-block:: console
 
@@ -252,40 +248,40 @@ fixtures for licenses, grants, communities and users in a new shell session:
    $ workon zenodo
    (zenodo)$ ./scripts/init.sh
 
-Let's also run the Celery worker on a different shell session:
+También ejecutemos el trabajador Celery en una sesión de shell diferente:
 
-.. code-block:: console
+.. code-block :: console
 
-   $ cd ~/src/zenodo
+   $ cd ~ / src / zenodo
    $ workon zenodo
-   (zenodo)$ celery worker -A zenodo.celery -l INFO --purge
+   (zenodo) $ trabajador de apio -A zenodo.celery -l INFO --purge
 
 .. note::
 
-    Here we assume all four services (db, es, mq, cache) are bound to localhost
-    (see `zenodo/config.py <https://github.com/zenodo/zenodo/blob/master/zenodo/config.py/>`_).
-    If you fail to connect those services, it is likely
-    you are running docker through ``docker-machine`` and those services are
-    bound to other IP addresses. In this case, you can redirect localhost ports
-    to docker ports as follows.
+    Aquí asumimos que los cuatro servicios (db, es, mq, caché) están vinculados a localhost
+    (vea `zenodo / config.py <https://github.com/zenodo/zenodo/blob/master/zenodo/config.py/>` _).
+    Si no puede conectar esos servicios, es probable
+    está ejecutando docker a través de `` docker-machine`` y esos servicios son
+    vinculado a otras direcciones IP. En este caso, puede redirigir los puertos localhost
+    a los puertos acoplables de la siguiente manera.
 
-    ``ssh -L 6379:localhost:6379 -L 5432:localhost:5432 -L 9200:localhost:9200 -L 5672:localhost:5672 docker@$(docker-machine ip)``
+    `` ssh -L 6379: localhost: 6379 -L 5432: localhost: 5432 -L 9200: localhost: 9200 -L 5672: localhost: 5672 docker @ $ (docker-machine ip) ``
 
-    The problem usually occurs among Mac and Windows users. A better solution
-    is to install the native apps `Docker for Mac <https://docs.docker.com/docker-for-mac/>`_
-    or `Docker for Windows <https://docs.docker.com/docker-for-windows/>`_
-    (available since Docker v1.12) if possible,
-    which binds docker to localhost by default.
+    El problema generalmente ocurre entre usuarios de Mac y Windows. Una mejor solución
+    es instalar las aplicaciones nativas `Docker para Mac <https://docs.docker.com/docker-for-mac/>` _
+    o `Docker para Windows <https://docs.docker.com/docker-for-windows/>` _
+    (disponible desde Docker v1.12) si es posible,
+    que une docker a localhost de forma predeterminada.
 
-Loading data
+Cargando datos
 ~~~~~~~~~~~~
 
-Next, let's load some external data (only licenses for the time being). Loading
-of this demo data is done asynchronusly with Celery, but depends on internet
-access since it involves harvesting external OAI-PMH or REST APIs.
+A continuación, carguemos algunos datos externos (solo licencias por el momento). Cargando
+de estos datos de demostración se realiza de forma asincrónica con Celery, pero depende de internet
+acceso ya que implica la recolección de API externas OAI-PMH o REST.
 
-Make sure you keep the session with Celery worker alive. Launch the data
-loading commands in a separate shell:
+Asegúrese de mantener viva la sesión con el trabajador de Apio. Lanzar los datos
+cargar comandos en un shell separado:
 
 .. code-block:: console
 
@@ -295,19 +291,19 @@ loading commands in a separate shell:
    (zenodo)$ zenodo opendefinition loadlicenses -s spdx
    (zenodo)$ ./scripts/index.sh
 
-Finally, run the Zenodo development server in debug mode. You can do that by
-setting up the environment flag:
+Finalmente, ejecute el servidor de desarrollo de Zenodo en modo de depuración. Puedes hacer eso por
+configurar la bandera del entorno:
 
 .. code-block:: console
 
     (zenodo)$ export FLASK_DEBUG=True
     (zenodo)$ zenodo run
 
-If you go to http://localhost:5000, you should see an instance of Zenodo,
-similar to the production instance at https://zenodo.org.
+Si va a http: // localhost: 5000, debería ver una instancia de Zenodo,
+similar a la instancia de producción en https://zenodo.org.
 
-Badges
+Insignias
 ~~~~~~
-In order for the DOI badges to work you must have the Cairo SVG library and the
-DejaVu Sans font installed on your system. Please see `Invenio-Formatter
-<http://pythonhosted.org/invenio-formatter/installation.html>`_ for details.
+Para que las insignias DOI funcionen, debe tener la biblioteca Cairo SVG y el
+Fuente DejaVu Sans instalada en su sistema. Por favor, consulte `Invenio-Formatter
+<http://pythonhosted.org/invenio-formatter/installation.html> `_ para más detalles.
