@@ -1259,10 +1259,10 @@ COPY public.accounts_role (id, name, description) FROM stdin;
 COPY public.accounts_user (id, email, password, active, confirmed_at, last_login_at, current_login_at, last_login_ip, current_login_ip, login_count) FROM stdin;
 1	info@zenodo.org	$pbkdf2-sha512$25000$USrlXAvBGIOQ0hpD6H3v3Q$QnMKmbTIanbXPTYV7vbmjPETf7mODb4yU2gaJ6.KYsstACnCWqUcIFGpPWjPzshxlqor1UrFRaxDhKFU0wqPBA	t	\N	\N	\N	\N	\N	\N
 3	jorge.toledano@dgru.unam.mx	$pbkdf2-sha512$25000$w7gXwniPUSpFyLn3/t87Bw$5nZECiiVNfg110Eu5FVKW3H1A3ha4Tef8kzsYiB4XaHiZvp1lR90iloNUsiDeQeR6GDcTMLbqvcF3BylxWAXzw	t	\N	2019-08-20 21:29:19.155499	2019-08-20 21:29:19.155499	\N	172.18.0.12	1
-4	tolevol@gmail.com	$pbkdf2-sha512$25000$2RsDACAEYEwJgZDy/h8DwA$wj9BwrP3Wtt197u/NDRRbfOSO6wifwQlVsWPULIgrmsQI2kciEILKVqNQlvUGbfiVdtw.uFPAI39HfdvzOoClQ	t	\N	2019-08-20 21:46:01.910054	2019-08-20 21:46:01.910054	\N	172.18.0.12	1
 5	tskore88@gmail.com	$pbkdf2-sha512$25000$gFCKcY7RGqNUKgVAaM05hw$.vhfRGD2JVfKC.cK378w3x3ioa7mc89BG/Gu5DR/kt1zFNz48uTmodFwPsKPidaxX7/rBlIEJIO.m1Z.ZgekMA	t	\N	2019-08-20 22:01:11.205785	2019-08-20 22:01:11.205785	\N	172.18.0.12	1
-2	tole@ciencias.unam.mx	$pbkdf2-sha512$25000$u1dqzXnv/Z8TwhhjTOk9hw$8kJ9fPUSJ/IKqjb4rJNptSWQ0sRpHacnQCquOisIBxdvLZpFZuVXAiDLVGEapJDa9WWdKBNY47AFU6E8iQZzZA	t	\N	2019-08-20 21:09:16.004002	2019-08-23 16:30:52.396477	172.18.0.12	172.18.0.12	7
-6	daniel.radamantis@gmail.com	$pbkdf2-sha512$25000$T0kJ4ZyTci4FoNQaw1hL6Q$xFUqqofVln08oa0xreVaOx92UWxe8SZvwOuM9ESlqI/VekUuq9WAOkuSvLsexK4y6nitjfm1nXvc2hYUMN3AaQ	t	\N	2019-08-23 19:03:18.764487	2019-08-23 19:03:18.764487	\N	172.18.0.12	1
+2	tole@ciencias.unam.mx	$pbkdf2-sha512$25000$u1dqzXnv/Z8TwhhjTOk9hw$8kJ9fPUSJ/IKqjb4rJNptSWQ0sRpHacnQCquOisIBxdvLZpFZuVXAiDLVGEapJDa9WWdKBNY47AFU6E8iQZzZA	t	\N	2019-08-23 22:49:33.014877	2019-08-26 17:33:39.009055	172.18.0.12	172.18.0.12	9
+6	correo@gmail.com	$pbkdf2-sha512$25000$T0kJ4ZyTci4FoNQaw1hL6Q$xFUqqofVln08oa0xreVaOx92UWxe8SZvwOuM9ESlqI/VekUuq9WAOkuSvLsexK4y6nitjfm1nXvc2hYUMN3AaQ	t	\N	2019-08-23 19:03:18.764487	2019-08-23 19:03:18.764487	\N	172.18.0.12	1
+4	tolevol@gmail.com	$pbkdf2-sha512$25000$hDCmVKqVsnZOaY0RgpASQg$q.zLq.WBCFsW13C.gpLPFkkRsz74KzUtryZJQMf0pK6GdMKBZkGdS/W5knpEB40lOFmrHi9rrLLpME/tr3HSBA	t	\N	2019-08-20 21:46:01.910054	2019-08-26 18:27:54.616355	172.18.0.12	172.18.0.12	2
 \.
 
 
@@ -1279,6 +1279,8 @@ COPY public.accounts_user_session_activity (created, updated, sid_s, user_id, ip
 2019-08-20 22:01:11.219188	2019-08-20 22:01:11.219196	b4cd5f9e76b71fac_5d5c6da7	5	172.18.0.12	\N	Firefox	60	Linux	Other
 2019-08-23 16:30:52.41292	2019-08-23 16:30:52.412928	66ea4ff0c8bec94e_5d6014bc	2	172.18.0.12	\N	Firefox	68	Ubuntu	Other
 2019-08-23 19:03:18.816014	2019-08-23 19:03:18.816026	a2dcf5acc2ae424a_5d603876	6	172.18.0.12	\N	Chrome	76	Linux	Other
+2019-08-23 22:49:33.020297	2019-08-23 22:49:33.020304	8c8f6ffe235610ca_5d606d7d	2	172.18.0.12	\N	Chrome	76	Linux	Other
+2019-08-26 18:27:54.637296	2019-08-26 18:27:54.637308	96d26601e8bda53c_5d6424aa	4	172.18.0.12	\N	Chrome	76	Linux	Other
 \.
 
 
