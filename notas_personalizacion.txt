@@ -1,0 +1,22 @@
+Ruta para la modificación de las instancias de invenio en el contenedor Docker:
+
+1. Si se accede por ssh:
+ssh tole@10.1.11.13
+tole@10.1.11.13's password: 
+
+2. Revisar los contenedores Docker existentes:
+docker container ls 
+sudo docker exec -i -t a9d5526e672b  /bin/bash
+
+
+
+
+
+
+
+
+Ruta para el acceso a los datasets guardados en la interfaz web de Zenodo:
+
+1. Directorio descrito en la base de datos:
+archive	/usr/local/var/instance/archive	false
+default	/usr/local/var/instance/data	true

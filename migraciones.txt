@@ -1,0 +1,14 @@
+Desarrollo  -->  Host
+10.1.11.217 -->  10.1.11.13
+
+Host --> Desarrollo
+sudo scp -r data tole@10.1.11.217:/home/tole/src
+
+Host  -->  Docker container
+sudo docker cp /home/tole/src 086d9fff6360:/usr/local/var/instance
+
+Docker container  -->  Host
+sudo docker cp 086d9fff6360:/usr/local/var/instance/data /home/tole/src/
+
+Reestablecer:
+docker-compose -f docker-compose.full.yml restart

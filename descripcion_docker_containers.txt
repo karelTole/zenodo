@@ -1,0 +1,15 @@
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                                                                                        NAMES
+3553787630bc        zenodo-lb:latest         "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks          0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp, 0.0.0.0:8080->8080/tcp                             zenodo_lb_1
+a9d5526e672b        zenodo-frontend:latest   "nginx -g 'daemon of…"   2 weeks ago         Up 2 weeks          0.0.0.0:81->80/tcp, 0.0.0.0:444->443/tcp                                                     zenodo_frontend_1
+918f71f49177        zenodo:latest            "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks                                                                                                       zenodo_worker_1
+086d9fff6360        zenodo:latest            "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks          0.0.0.0:5000->5000/tcp                                                                       zenodo_web_1
+2bf29c2d78c7        zenodo-kibana:4.3        "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks          0.0.0.0:5601->5601/tcp                                                                       zenodo_kibana_1
+63ac1dd654d4        mher/flower              "flower --broker=amq…"   2 weeks ago         Up 2 weeks          0.0.0.0:5555->5555/tcp                                                                       zenodo_flower_1
+bbd12799eece        zenodo:latest            "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks                                                                                                       zenodo_static_1
+019f2b8339ae        rabbitmq:3-management    "docker-entrypoint.s…"   2 weeks ago         Up 2 weeks          4369/tcp, 5671/tcp, 0.0.0.0:5672->5672/tcp, 15671/tcp, 25672/tcp, 0.0.0.0:15672->15672/tcp   zenodo_mq_1
+73556133336d        zenodo-postgres          "docker-entrypoint.s…"   2 weeks ago         Up 2 weeks          0.0.0.0:5432->5432/tcp                                                                       zenodo_db_1
+45e4df1604e9        redis                    "docker-entrypoint.s…"   2 weeks ago         Up 2 weeks          0.0.0.0:6379->6379/tcp                                                                       zenodo_cache_1
+b6f27c3f46e7        zenodo-es:2.4.6          "/docker-entrypoint.…"   2 weeks ago         Up 2 weeks          0.0.0.0:9200->9200/tcp, 0.0.0.0:9300->9300/tcp                                               zenodo_es_1
+
+
+
