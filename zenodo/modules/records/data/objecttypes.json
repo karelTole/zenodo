@@ -79,6 +79,17 @@
   "title_plural": {
     "en": "Datasets"
   },
+  "schema.org": "https://schema.org/ScholarlyArticle",
+  "datacite": {"general": "Text"},
+  "eurepo": "info:eu-repo/semantics/other",
+  "children": [
+    {"$ref": "https://zenodo.org/objecttypes/dataset/darwinCore"},
+    {"$ref": "https://zenodo.org/objecttypes/dataset/Obra_Artística"},
+    {"$ref": "https://zenodo.org/objecttypes/dataset/Objetos Digitales"},
+    {"$ref": "https://zenodo.org/objecttypes/dataset/Artículo"},
+    {"$ref": "https://zenodo.org/objecttypes/dataset/Tesis"},
+    {"$ref": "https://zenodo.org/objecttypes/dataset/otro"}
+  ],
   "datacite": {"general": "Dataset"},
   "eurepo": "info:eu-repo/semantics/other",
   "schema.org": "https://schema.org/Dataset",

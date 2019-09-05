@@ -179,14 +179,6 @@
           {
             "value": "darwincore",
             "name": "Estándar de Biodiversidad Darwin Core"
-          },
-          {
-            "value": "genebank",
-            "name": "Estándar Banco de Genes (Gene Bank)"
-          },
-          {
-            "value": "obraartisticaunam",
-            "name": "Estándar de Obra Artística UNAM"
           }
         ]
       },
