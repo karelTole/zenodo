@@ -1,7 +1,7 @@
 #
 # Zenodo development docker build
 #
-FROM python:3.5
+FROM python:2.7
 MAINTAINER Zenodo <info@zenodo.org>
 
 ARG TERM=linux
@@ -12,15 +12,13 @@ RUN apt-get update \
     && apt-get -qy upgrade --fix-missing --no-install-recommends \
     && apt-get -qy install --fix-missing --no-install-recommends \
         apt-utils curl libcairo2-dev fonts-dejavu libfreetype6-dev \
+        uwsgi-plugin-python \
+    
     # Node.js
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get -qy install --fix-missing --no-install-recommends \
         nodejs \
     && npm install -g npm@4 \
-    
-    #Install nano for modifying 
- 
-    && apt install nano
 
     # Slim down image
     && apt-get clean autoclean \
@@ -75,6 +73,8 @@ RUN adduser --uid 1000 --disabled-password --gecos '' zenodo \
 
 RUN mkdir -p /usr/local/var/data && \
     chown zenodo:zenodo /usr/local/var/data -R && \
+    mkdir -p /usr/local/var/run && \
+    chown zenodo:zenodo /usr/local/var/run -R && \
     mkdir -p /var/log/zenodo && \
     chown zenodo:zenodo /var/log/zenodo -R
 
