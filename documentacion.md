@@ -92,7 +92,7 @@ A continuación se presenta la guía que describe de manera general la instalaci
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/Datos-Abiertos0.png "image_tooltip")
+![alt_text](images/zenodo_inicio.jpg "image_tooltip")
 
 
 
