@@ -564,10 +564,7 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 	Subir documentos
 
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos20.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Datos-Abiertos20.png "image_tooltip")
+![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 
