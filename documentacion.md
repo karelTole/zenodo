@@ -87,7 +87,7 @@ A continuación se presenta la guía que describe de manera general la instalaci
 [TOC]
 
 
-![alt_text](images/zenodo_inicio.jpg "image_tooltip")
+![alt_text](images/zenodo_inicio.png "image_tooltip")
 
 
 
