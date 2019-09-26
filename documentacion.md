@@ -147,11 +147,7 @@ Para poder subir nuestros datos, primero se debe crear una cuenta haciendo clic 
 Figura 2. Botón Iniciar sesión / Registro:
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Datos-Abiertos1.png "image_tooltip")
+![alt_text](images/navegacion/pagina_inicio/login_signup_button.png "image_tooltip")
 
 
 Nota: se debe tener una cuenta para poder cargar datos y crear comunidades. Sin embargo, se pueden explorar los archivos en la plataforma sin necesidad de iniciar sesión.
@@ -163,12 +159,7 @@ Para comenzar el proceso de carga, busque el botón de carga que se encuentra en
 
 Figura 3. Menú para subida de archivos.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Datos-Abiertos2.png "image_tooltip")
+![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 Una vez dirigido a la nueva página de carga, elija un archivo para cargar, ya sea haciendo clic en el botón "elegir archivos" o arrastrando los archivos desde el explorador de archivos de su computadora.
@@ -241,10 +232,7 @@ Figura 5. Interfaz de carga de archivos (continuación).
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Datos-Abiertos3.png "image_tooltip")
+![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 
