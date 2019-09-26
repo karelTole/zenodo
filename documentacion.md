@@ -241,10 +241,6 @@ Figura 5. Interfaz de carga de archivos (continuación).
 Parte de la información requerida para cargar un archivo es la sección de “Licencia”. Si bien Zenodo fomenta que todos los datos se compartan, también permite diferentes niveles de visibilidad, incluidos el acceso abierto, acceso con embargo, acceso restringido y el acceso cercano. El acceso abierto requiere un nombre de licencia, el acceso con embargo requiere un nombre de licencia y una fecha de embargo, el acceso restringido requiere condiciones para otorgar a otros usuarios acceso a los datos publicados, y el acceso cerrado no requiere información adicional. 
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos4.png "image_tooltip")
 
 
@@ -257,10 +253,6 @@ Posteriormente en la sección de carga de datos se incluyen otros apartados que 
 *   Finalmente tenemos identificaciones alternativos. En esta sección debe incluir identificadores para cualquier información relacionada con la que está cargando. 
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos5.png "image_tooltip")
 
 
@@ -270,19 +262,12 @@ Posteriormente en la sección de carga de datos se incluyen otros apartados que 
 La parte final del proceso de carga incluye información opcional que el usuario puede ingresar. 
 
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos6.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos6.png "image_tooltip")
 
 
 
 ### **Interfaz de búsqueda**
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos7.png "image_tooltip")
@@ -295,9 +280,6 @@ Con la funcionalidad de búsqueda, el usuario puede buscar un conjunto específi
 
 La arquitectura de Zenodo permite etiquetar los datos cargados hacia un conjunto de metadatos. Una vez que se ha depositado un conjunto de datos, Zenodo proporciona una herramienta para exportar sus metadatos correspondientes en varios formatos. En el siguiente ejemplo se muestra la exportación de un conjunto de datos en el estándar Dublin Core, el cual contiene etiquetas para campos como creador, fecha, descripción y asunto, todos los cuales se proporcionan en formato .xml. 
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos8.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos8.png "image_tooltip")
@@ -313,8 +295,6 @@ Para acceder a la sección de exportación, haga lo siguiente:
 4. Haga clic en Dublin Core.
 
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos9.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos9.png "image_tooltip")
@@ -332,7 +312,6 @@ Para acceder a la sección de exportación, haga lo siguiente:
 
 
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos10.png "image_tooltip")
@@ -364,20 +343,14 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
 1. Vaya a la página web de comunidades en el sitio web de Zenodo.
 
 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos11.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos11.png "image_tooltip")
 
 
 
 
-2. Haga clic en el botón "Nuevo" ubicado en el lado derecho de la pantalla.
+1. Haga clic en el botón "Nuevo" ubicado en el lado derecho de la pantalla.
 
      
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos12.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos12.png "image_tooltip")
@@ -386,14 +359,14 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
 
     	
 
-3. Posteriormente se le dirigirá a un formulario para completar la siguiente información:
+1. Posteriormente se le dirigirá a un formulario para completar la siguiente información:
     1. Identificador: identifica la comunidad y se incluye en la URL de la comunidad. Éste paso no se puede modificar más adelante.
     2. Título: un título para su comunidad
     3. Descripción (opcional): permite asignar una breve descripción de la comunidad.
     4. Curación (opcional): describe la política en la que aceptará y rechazará la ingesta de nuevos datos en la comunidad.
     5. Página (opcional): una descripción larga de la comunidad que se mostrará en una página separada vinculada en el índice.
     6. Logo - Una imagen para ayudar y promover el reconocimiento público. 
-4. Haga clic en Crear y la comunidad podrá verse de manera pública en la interfaz web.
+2. Haga clic en Crear y la comunidad podrá verse de manera pública en la interfaz web.
 
 
 #### **Editar una comunidad**
@@ -406,7 +379,7 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
 
 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos13.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/Datos-Abiertos13.png "image_tooltip")
@@ -421,7 +394,6 @@ También puede eliminar la comunidad en esta página. El botón Eliminar se encu
 
 
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos14.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos14.png "image_tooltip")
@@ -434,7 +406,7 @@ También se puede acceder a cualquiera de las tareas sobre comunidades por medio
 
 
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos15.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/Datos-Abiertos15.png "image_tooltip")
@@ -450,8 +422,6 @@ También se puede acceder a cualquiera de las tareas sobre comunidades por medio
 3. Haga clic en el menú desplegable de acciones y seleccionar.
 
 
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos16.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos16.png "image_tooltip")
@@ -471,7 +441,6 @@ En esta página puede seleccionar un archivo ya cargado y aceptar o rechazar el 
 
 ## 
 
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos17.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos17.png "image_tooltip")
@@ -481,7 +450,6 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos18.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos18.png "image_tooltip")
@@ -489,9 +457,6 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 	Registro e iniciar sesión
 
-
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos19.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos19.png "image_tooltip")
@@ -503,10 +468,6 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos21.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos21.png "image_tooltip")
 
 
@@ -514,23 +475,15 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos22.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/Datos-Abiertos22.png "image_tooltip")
 
 
 
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos23.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos23.png "image_tooltip")
 
-
-
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos24.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos24.png "image_tooltip")
@@ -540,15 +493,8 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos25.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/Datos-Abiertos25.png "image_tooltip")
-
-
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos26.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos26.png "image_tooltip")
@@ -560,17 +506,11 @@ Crear comunidades
 
 
 
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos27.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos27.png "image_tooltip")
 
 
 	Administrar comunidades
 
-
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos28.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos28.png "image_tooltip")
@@ -580,17 +520,11 @@ Crear comunidades
 
 
 
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos29.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos29.png "image_tooltip")
 
 
 Versiones:
 
-
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos30.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos30.png "image_tooltip")
@@ -600,17 +534,11 @@ Compartir recurso:
 
 
 
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos31.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos31.png "image_tooltip")
 
 
 Exportar recurso:
 
-
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos32.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos32.png "image_tooltip")
@@ -620,17 +548,12 @@ Exportar como formato BibTex:
 
 
 
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos33.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos33.png "image_tooltip")
 
 
 Exportar como formato CSL:
 
 
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos34.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos34.png "image_tooltip")
@@ -640,17 +563,11 @@ Exportar como formato DataCite:
 
 
 
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos35.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos35.png "image_tooltip")
 
 
 Exportar como formato Dublin Core:
 
-
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos36.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos36.png "image_tooltip")
@@ -660,17 +577,11 @@ Exportar como formato JSON:
 
 
 
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos37.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Datos-Abiertos37.png "image_tooltip")
 
 
 Exportar como formato JSON-LD:
 
-
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Datos-Abiertos38.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Datos-Abiertos38.png "image_tooltip")
@@ -682,9 +593,6 @@ Exportar como formato JSON-LD:
 
 ## 	4.1. ¿Cómo son los datos almacenados en el servidor?
 
-
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![drawing](https://docs.google.com/a/google.com/drawings/d/12345/export/png)
