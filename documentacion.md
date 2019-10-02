@@ -39,7 +39,7 @@ La plataforma Zenodo, al ser de código abierto, permite la personalización y a
 A continuación se presenta la guía que describe de manera general la instalación y la navegación por la plataforma Zenodo adaptada a un ambiente de desarrollo local. 
 
 
-![alt_text](images/zenodo_inicio.png "image_tooltip")
+[alt_text](images/zenodo_inicio.png "image_tooltip")
 
 
 
@@ -147,7 +147,7 @@ Para poder subir nuestros datos, primero se debe crear una cuenta haciendo clic 
 Figura 2. Botón Iniciar sesión / Registro:
 
 
-![alt_text](images/navegacion/pagina_inicio/login_signup_button.png "image_tooltip")
+[alt_text](images/navegacion/pagina_inicio/login_signup_button.png "image_tooltip")
 
 
 Nota: se debe tener una cuenta para poder cargar datos y crear comunidades. Sin embargo, se pueden explorar los archivos en la plataforma sin necesidad de iniciar sesión.
@@ -159,7 +159,7 @@ Para comenzar el proceso de carga, busque el botón de carga que se encuentra en
 
 Figura 3. Menú para subida de archivos.
 
-![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
+[alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 Una vez dirigido a la nueva página de carga, elija un archivo para cargar, ya sea haciendo clic en el botón "elegir archivos" o arrastrando los archivos desde el explorador de archivos de su computadora.
@@ -232,7 +232,7 @@ Figura 5. Interfaz de carga de archivos (continuación).
 
 
 
-![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
+[alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 
@@ -241,7 +241,7 @@ Figura 5. Interfaz de carga de archivos (continuación).
 Parte de la información requerida para cargar un archivo es la sección de “Licencia”. Si bien Zenodo fomenta que todos los datos se compartan, también permite diferentes niveles de visibilidad, incluidos el acceso abierto, acceso con embargo, acceso restringido y el acceso cercano. El acceso abierto requiere un nombre de licencia, el acceso con embargo requiere un nombre de licencia y una fecha de embargo, el acceso restringido requiere condiciones para otorgar a otros usuarios acceso a los datos publicados, y el acceso cerrado no requiere información adicional. 
 
 
-![alt_text](images/Datos-Abiertos4.png "image_tooltip")
+[alt_text](images/Datos-Abiertos4.png "image_tooltip")
 
 
 Posteriormente en la sección de carga de datos se incluyen otros apartados que son: comunidades, financiamiento e identificadores alternativos. 
@@ -253,7 +253,7 @@ Posteriormente en la sección de carga de datos se incluyen otros apartados que 
 *   Finalmente tenemos identificaciones alternativos. En esta sección debe incluir identificadores para cualquier información relacionada con la que está cargando. 
 
 
-![alt_text](images/Datos-Abiertos5.png "image_tooltip")
+[alt_text](images/Datos-Abiertos5.png "image_tooltip")
 
 
 
@@ -262,7 +262,7 @@ Posteriormente en la sección de carga de datos se incluyen otros apartados que 
 La parte final del proceso de carga incluye información opcional que el usuario puede ingresar. 
 
 
-![alt_text](images/Datos-Abiertos6.png "image_tooltip")
+[alt_text](images/Datos-Abiertos6.png "image_tooltip")
 
 
 
@@ -270,7 +270,7 @@ La parte final del proceso de carga incluye información opcional que el usuario
 
 
 
-![alt_text](images/Datos-Abiertos7.png "image_tooltip")
+[alt_text](images/Datos-Abiertos7.png "image_tooltip")
 
 
 Con la funcionalidad de búsqueda, el usuario puede buscar un conjunto específico de datos dentro del archivo de datos. El usuario puede buscar un archivo buscando los metadatos específicos que se ingresaron durante la carga de ese archivo. Así mismo el uso de palabras clave durante la carga de los datos permite agilizar la búsqueda y exploración de los archivos. Los resultados de la búsqueda muestran la siguiente información: fecha publicada, tipo de datos, tipo de acceso, título, descripción y fecha de carga. También puede hacer clic en el botón de vista para ver los datos en ese cuadro de búsqueda. En el lado izquierdo de la interfaz de búsqueda y exploración hay varias facetas que se utilizan para filtrar la cantidad de registros devueltos en la búsqueda.
@@ -282,7 +282,7 @@ La arquitectura de Zenodo permite etiquetar los datos cargados hacia un conjunto
 
 
 
-![alt_text](images/Datos-Abiertos8.png "image_tooltip")
+[alt_text](images/Datos-Abiertos8.png "image_tooltip")
 
 
 Para acceder a la sección de exportación, haga lo siguiente:
@@ -297,7 +297,7 @@ Para acceder a la sección de exportación, haga lo siguiente:
 
 
 
-![alt_text](images/Datos-Abiertos9.png "image_tooltip")
+[alt_text](images/Datos-Abiertos9.png "image_tooltip")
 
 
 
@@ -314,7 +314,7 @@ Para acceder a la sección de exportación, haga lo siguiente:
 
 
 
-![alt_text](images/Datos-Abiertos10.png "image_tooltip")
+[alt_text](images/Datos-Abiertos10.png "image_tooltip")
 
 
 
@@ -343,7 +343,7 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
 1. Vaya a la página web de comunidades en el sitio web de Zenodo.
 
 
-![alt_text](images/Datos-Abiertos11.png "image_tooltip")
+[alt_text](images/Datos-Abiertos11.png "image_tooltip")
 
 
 
@@ -353,7 +353,7 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
      
 
 
-![alt_text](images/Datos-Abiertos12.png "image_tooltip")
+[alt_text](images/Datos-Abiertos12.png "image_tooltip")
 
 
 
@@ -382,7 +382,7 @@ Para crear una comunidad es necesario que el usuario esté registrado en la plat
 
 
 
-![alt_text](images/Datos-Abiertos13.png "image_tooltip")
+[alt_text](images/Datos-Abiertos13.png "image_tooltip")
 
 
 La información que puede ser editada en una comunidad ya existente es la siguiente: Título, Descripción, Política de Curación, Página y Logotipo. 
@@ -396,7 +396,7 @@ También puede eliminar la comunidad en esta página. El botón Eliminar se encu
 
 
 
-![alt_text](images/Datos-Abiertos14.png "image_tooltip")
+[alt_text](images/Datos-Abiertos14.png "image_tooltip")
 
 
 
@@ -409,7 +409,7 @@ También se puede acceder a cualquiera de las tareas sobre comunidades por medio
 
 
 
-![alt_text](images/Datos-Abiertos15.png "image_tooltip")
+[alt_text](images/Datos-Abiertos15.png "image_tooltip")
 
 
 
@@ -424,7 +424,7 @@ También se puede acceder a cualquiera de las tareas sobre comunidades por medio
 
 
 
-![alt_text](images/Datos-Abiertos16.png "image_tooltip")
+[alt_text](images/Datos-Abiertos16.png "image_tooltip")
 
 
 En esta página puede seleccionar un archivo ya cargado y aceptar o rechazar el archivo para que aparezca como parte de la comunidad.
@@ -443,7 +443,7 @@ En esta página puede seleccionar un archivo ya cargado y aceptar o rechazar el 
 
 
 
-![alt_text](images/Datos-Abiertos17.png "image_tooltip")
+[alt_text](images/Datos-Abiertos17.png "image_tooltip")
 
 
 En esta sección se puede ver información sobre su comunidad y cualquier archivo que se cargue en su comunidad.
@@ -452,23 +452,23 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-![alt_text](images/Datos-Abiertos18.png "image_tooltip")
+[alt_text](images/Datos-Abiertos18.png "image_tooltip")
 
 
 	Registro e iniciar sesión
 
 
 
-![alt_text](images/Datos-Abiertos19.png "image_tooltip")
+[alt_text](images/Datos-Abiertos19.png "image_tooltip")
 
 
 	Subir documentos
 
-![alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
+[alt_text](images/navegacion/subir_documentos/zenodo_upload_01.png "image_tooltip")
 
 
 
-![alt_text](images/Datos-Abiertos21.png "image_tooltip")
+[alt_text](images/Datos-Abiertos21.png "image_tooltip")
 
 
 	Editar documentos
@@ -478,15 +478,15 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-![alt_text](images/Datos-Abiertos22.png "image_tooltip")
+[alt_text](images/Datos-Abiertos22.png "image_tooltip")
 
 
 
-![alt_text](images/Datos-Abiertos23.png "image_tooltip")
+[alt_text](images/Datos-Abiertos23.png "image_tooltip")
 
 
 
-![alt_text](images/Datos-Abiertos24.png "image_tooltip")
+[alt_text](images/Datos-Abiertos24.png "image_tooltip")
 
 
 	Comunidades
@@ -494,10 +494,10 @@ En esta sección se puede ver información sobre su comunidad y cualquier archiv
 
 
 
-![alt_text](images/Datos-Abiertos25.png "image_tooltip")
+[alt_text](images/Datos-Abiertos25.png "image_tooltip")
 
 
-![alt_text](images/Datos-Abiertos26.png "image_tooltip")
+[alt_text](images/Datos-Abiertos26.png "image_tooltip")
 
 
 	
@@ -506,49 +506,49 @@ Crear comunidades
 
 
 
-![alt_text](images/Datos-Abiertos27.png "image_tooltip")
+[alt_text](images/Datos-Abiertos27.png "image_tooltip")
 
 
 	Administrar comunidades
 
 
 
-![alt_text](images/Datos-Abiertos28.png "image_tooltip")
+[alt_text](images/Datos-Abiertos28.png "image_tooltip")
 
 
 	Administrar usuarios
 
 
 
-![alt_text](images/Datos-Abiertos29.png "image_tooltip")
+[alt_text](images/Datos-Abiertos29.png "image_tooltip")
 
 
 Versiones:
 
 
 
-![alt_text](images/Datos-Abiertos30.png "image_tooltip")
+[alt_text](images/Datos-Abiertos30.png "image_tooltip")
 
 
 Compartir recurso:
 
 
 
-![alt_text](images/Datos-Abiertos31.png "image_tooltip")
+[alt_text](images/Datos-Abiertos31.png "image_tooltip")
 
 
 Exportar recurso:
 
 
 
-![alt_text](images/Datos-Abiertos32.png "image_tooltip")
+[alt_text](images/Datos-Abiertos32.png "image_tooltip")
 
 
 Exportar como formato BibTex:
 
 
 
-![alt_text](images/Datos-Abiertos33.png "image_tooltip")
+[alt_text](images/Datos-Abiertos33.png "image_tooltip")
 
 
 Exportar como formato CSL:
@@ -556,35 +556,35 @@ Exportar como formato CSL:
 
 
 
-![alt_text](images/Datos-Abiertos34.png "image_tooltip")
+[alt_text](images/Datos-Abiertos34.png "image_tooltip")
 
 
 Exportar como formato DataCite:
 
 
 
-![alt_text](images/Datos-Abiertos35.png "image_tooltip")
+[alt_text](images/Datos-Abiertos35.png "image_tooltip")
 
 
 Exportar como formato Dublin Core:
 
 
 
-![alt_text](images/Datos-Abiertos36.png "image_tooltip")
+[alt_text](images/Datos-Abiertos36.png "image_tooltip")
 
 
 Exportar como formato JSON:
 
 
 
-![alt_text](images/Datos-Abiertos37.png "image_tooltip")
+[alt_text](images/Datos-Abiertos37.png "image_tooltip")
 
 
 Exportar como formato JSON-LD:
 
 
 
-![alt_text](images/Datos-Abiertos38.png "image_tooltip")
+[alt_text](images/Datos-Abiertos38.png "image_tooltip")
 
 
 
