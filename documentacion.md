@@ -594,8 +594,8 @@ Exportar como formato JSON-LD:
 ## 	4.1. ¿Cómo son los datos almacenados en el servidor?
 
 
-
-![drawing](https://docs.google.com/a/google.com/drawings/d/12345/export/png)
+Pie de imagen.
+[drawing](https://docs.google.com/a/google.com/drawings/d/12345/export/png)
 
 
 ## 4.2. Acuñación del DOI.
