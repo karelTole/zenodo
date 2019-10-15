@@ -29,10 +29,10 @@
 -e git+https://github.com/zenodo/zenodo-migrator.git#egg=zenodo-migrator
 
 # PyPI requirements
-alembic==0.9.9
-amqp==2.2.2
+alembic==1.0.8
+amqp==2.4.2
 angular-gettext-babel==0.3
-arrow==0.13.0
+arrow==0.13.1
 asn1crypto==0.24.0
 autosemver==0.5.3
 Babel==2.5.3
@@ -240,7 +240,7 @@ webencodings==0.5.1
 Werkzeug==0.15.3
 whichcraft==0.4.1
 wsgi-statsd==0.3.1
-WTForms==2.1
+WTForms==1.1
 WTForms-Alchemy==0.16.6
 WTForms-Components==0.10.3
 zenodo-accessrequests==1.0.0a2
