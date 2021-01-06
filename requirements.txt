@@ -44,7 +44,7 @@ binaryornot==0.4.4
 bleach==3.0.2
 blinker==1.4
 cairocffi==0.8.0
-CairoSVG==1.0.22
+CairoSVG==2.5.1
 cchardet==2.1.1
 celery==4.1.0
 certifi==2018.1.18
